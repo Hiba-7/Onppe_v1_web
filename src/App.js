@@ -1,11 +1,26 @@
-import './App.css';
-import Header from './components/Header';
+import "./App.css";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
     <div className="App">
-    <Header/>
+    <div className="grid grid-cols-12">
+    <div className='col-span-2'>
+        <Navbar />
+        <div>
+          {/*Card*/}
+          {/*Table*/}
+        </div>
+      </div>
+    <div className="col-span-10">
+      <Header />
+      </div>
+
+     
     </div>
+    </div>
+
   );
 }
 

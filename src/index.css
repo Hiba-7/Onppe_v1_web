@@ -14,3 +14,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@layer components{
+.nav-icon{
+  @apply w-6 h-6 cursor-pointer
+}
+}
