@@ -9,7 +9,7 @@ import {
 import { useState } from "react";
 
 function Header() {
-  const [username, setUsername] = useState("Bentaleb Fan");
+  const [username, setUsername] = useState("بن طالب فنال");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
