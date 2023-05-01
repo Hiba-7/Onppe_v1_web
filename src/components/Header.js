@@ -20,16 +20,10 @@ function Header() {
     <div className="flex flex-col">
 
     <div className="w-full py-3 items-center justify-between flex px-12">
-      {/*welcome*/}
-      <div className="flex items-center">
-        <img src={logo} className="w-10 h-10  mr-3" />
-        <h1 className="font-semibold font-montserrat text-2xl">
-          Welcome to ONPPE
-        </h1>
-      </div>
+         
       {/*profile*/}
       <div className="flex items-center justify-between">
-        <BellIcon className="header-icon h-6 w-6 mr-10" />
+        
         <img src={profilepicture} className="w-9 h-9 rounded-full mr-3" />
         <p className="ml-2 font-regular mr-3">{username}</p>
         <div className="flex  flex-col">
@@ -37,8 +31,8 @@ function Header() {
           className="header-icon h-5 w-5 cursor-pointer self-start"
           onClick={handleMenuToggle}
         />
-      
         </div>
+        <BellIcon className="header-icon h-6 w-6 mr-10" />
       </div>
     </div>
     <div className="flex flex-col">
