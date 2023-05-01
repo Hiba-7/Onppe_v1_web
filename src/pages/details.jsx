@@ -1,4 +1,5 @@
 import React from 'react';
+import img1 from '../assets/images/img1.png'; 
 export default function Details() {
     return (
         <>
@@ -82,22 +83,96 @@ export default function Details() {
                     
                 </div>
                 <h1 className="font-medium text-2xl mt-5 mb-3"> أدلة الاخطار</h1>
-                        
+
+                <div class="mb-4 border-b border-orange-400 dark:border-orange-400">
+            <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                <li class="mr-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 border-green-400 text-green-700 rounded-t-lg hover:text-green-600 hover:border-green-300 dark:hover:text-green-300" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">الصور</button>
+                </li>
+                <li class="mr-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-green-600 hover:border-green-300 dark:hover:text-green-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">الفيديوات</button>
+                </li>
+                <li class="mr-2" role="presentation">
+                <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-green-600 hover:border-green-300 dark:hover:text-green-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">التسجيلات صوتية</button>
+                </li>
+            </ul>
+            </div>
+            <div class="flex justify-center space-x-4">
+            <div class="p-2 bg-white rounded-lg shadow-md">
+                <img src={img1} alt="img1" />
                 
-                <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
-                    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
-                        <li class="mr-2" role="presentation">
-                            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-tab" data-tabs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">الصور</button>
-                        </li>
-                        <li class="mr-2" role="presentation">
-                            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">الفيديوات</button>
-                        </li>
-                        <li class="mr-2" role="presentation">
-                            <button class="inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-tab" data-tabs-target="#settings" type="button" role="tab" aria-controls="settings" aria-selected="false">التسجيلات صوتية</button>
-                        </li>
-                        
-                    </ul>
-                </div>
+            </div>
+            <div class="p-2 bg-white rounded-lg shadow-md">
+                <img src={img1} alt="img1" />
+            </div>
+            <div class="p-2 bg-white rounded-lg shadow-md">
+                <img src={img1} alt="img1" />
+            </div>
+            <div class="p-2 bg-white rounded-lg shadow-md">
+                <img src={img1} alt="img1" />
+            </div>
+            </div>
+
+             <div class="flex justify-center space-x-4">
+            <div class="p-2 bg-white rounded-lg shadow-md">
+                <img src={img1} alt="img1" />
+            </div>
+            <div class="p-2 bg-white rounded-lg shadow-md">
+                <img src={img1} alt="img1" />
+            </div>
+            <div class="p-2 bg-white rounded-lg shadow-md">
+                <img src={img1} alt="img1" />
+            </div>
+            <div class="p-2 bg-white rounded-lg shadow-md">
+                <img src={img1} alt="img1" />
+            </div>
+            </div>
+
+
+
+
+
+
+            {/* <div id="myTabContent">
+            <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="profile" role="tabpanel" aria-labelledby="profile-tab" aria-hidden="false">
+                <p class="text-sm text-gray-500 dark:text-gray-400">content 1 </p>
+            </div>
+            <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab" aria-hidden="false">
+                <p class="text-sm text-gray-500 dark:text-gray-400">content 2</p>
+            </div>
+            <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="settings" role="tabpanel" aria-labelledby="settings-tab" aria-hidden="false">
+                <p class="text-sm text-gray-500 dark:text-gray-400">content 3</p>
+            </div>
+            </div> */}
+                            {/* <script>
+                const tabs = document.querySelectorAll('[data-tabs-target]');
+
+                tabs.forEach(tab => {
+                    tab.addEventListener('click', () => {
+                    const target = document.querySelector(tab.dataset.tabsTarget);
+                    const tabContents = document.querySelectorAll('#myTabContent > div');
+
+                    tabContents.forEach(content => {
+                        if (content === target) {
+                        content.classList.remove('hidden');
+                        content.setAttribute('aria-hidden', 'false');
+                        } else {
+                        content.classList.add('hidden');
+                        content.setAttribute('aria-hidden', 'true');
+                        }
+                    });
+
+                    tabs.forEach(t => {
+                        if (t === tab) {
+                        t.setAttribute('aria-selected', 'true');
+                        } else {
+                        t.setAttribute('aria-selected', 'false');
+                        }
+                    });
+                    })
+                });
+                </script> */}
+
             </div>
             </html>
         </>
