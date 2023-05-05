@@ -2,11 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+ 
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -18,12 +15,8 @@ code {
 }
 }
 
+
 @font-face {
   font-family: Montserrat;
   src: url("assets/fonts/Montserrat-Arabic-Regular.ttf") format("truetype")
-}
-nav {
-  position: fixed;
-  right: 0;
-  padding-left: 0px;
 }

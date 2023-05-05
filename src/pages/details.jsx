@@ -3,7 +3,7 @@ import img1 from '../assets/images/img1.png';
 export default function Details() {
     return (
         <>
-            <html dir="rtl" lang="ar" className="font-mons mr-40"  >
+            <html dir="rtl" lang="ar" className="font-mons mr-10"  >
                 
             <div className=" my-10  text-right">
               <div className="flex justify-between items-center">
